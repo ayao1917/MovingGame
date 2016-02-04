@@ -45,7 +45,7 @@
 
         var playerList = [];
 
-        var timer = 50;
+        var timer = 61;
         var next = 1000;
 
         countdown();
@@ -123,8 +123,8 @@
         function countdown() {
             if (timer > 0) {
                 next = next > 200 ? next - 20 : next;
-                document.getElementById('time').innerHTML = timer.toString();
                 timer --;
+                document.getElementById('time').innerHTML = timer.toString();
                 setTimeout(function () {
                     countdown();
                 }, 1000);
