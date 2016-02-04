@@ -1,0 +1,57 @@
+.block-broader {
+    height: 90vh;
+    border: 1px #ccc solid;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.dashboard {
+    position: fixed;
+    top: 5vh;
+    left: 75vw;
+    font-size: 64px;
+    color: red;
+}
+
+.block-obj {
+    width: 5vw;
+    height: 5vw;
+    position: fixed;
+    /*background-image: url('images/up1.png');*/
+    background-repeat:no-repeat;
+    background-size: cover;
+    /*background-color: greenyellow;*/
+}
+
+.block-animate {
+    animation: TestMove 2s linear 1; /*IE*/
+    -moz-animation: TestMove 2s linear 1; /*FireFox*/
+    -webkit-animation: TestMove 2s linear 1; /*Chrome, Safari*/
+}
+
+@keyframes TestMove {
+    from {
+        top: -10%;
+    }
+    to {
+        top: 110%;
+    }
+}
+
+@-moz-keyframes TestMove {
+    from {
+        top: -10%;
+    }
+    to {
+        top: 110%;
+    }
+}
+
+@-webkit-keyframes TestMove {
+    from {
+        top: -10%;
+    }
+    to {
+        top: 110%;
+    }
+}
